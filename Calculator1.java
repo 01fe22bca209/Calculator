@@ -46,11 +46,18 @@ class Calculator1{
     float division(float op1,float op2){
         return(op1/op2);
     }
+    int square(int num){
+        return(num*num);
+    }
+    int cube(int num){
+        return(num*num*num);
+    }
    // The code you provided is the main method of the Calculator1 class. The main method is the entry
    // point of the Java program and it is where the program starts executing.
     public static void main(String[] args){
         float op1=10;
         float op2=20;
+        int num=3;
         Calculator1 cal=new Calculator1();
         float resultAdd=cal.addition(op1,op2);
 System.out.println("Result of addition:"+resultAdd);
@@ -60,6 +67,10 @@ float resultMultiply=cal.multiplication(op1,op2);
 System.out.println("Result of multiplication:"+resultMultiply);
 float resultDivide=cal.division(op1,op2);
 System.out.println("Result of division:"+resultDivide);
+int resultsq=cal.square(num);
+System.out.println("Square of "+num+"is"+resultsq);
+int resultcu=cal.cube(num);
+System.out.println("Cube of "+num+"is"+resultcu);
     }
 }
 
